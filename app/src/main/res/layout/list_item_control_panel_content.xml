@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_employee_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_employee_icon"
+        app:layout_constraintStart_toEndOf="@+id/img_employee_icon"
+        app:layout_constraintTop_toTopOf="@+id/img_employee_icon"
+        tools:text="Ole Gunner" />
+
+    <TextView
+        android:id="@+id/tv_employee_surname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_employee_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_employee_name"
+        tools:text="SolskjaerSolskjaerSolskjaerSolskjaerSolskjaer" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_assigned_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="Assigned Taks: "
+        android:textSize="12sp"
+        app:chipIcon="@drawable/ic_assignment_black_24dp"
+        app:chipIconSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_employee_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_employee_name" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_workload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="Workload: "
+        android:textSize="12sp"
+        app:chipIcon="@drawable/ic_work_black_24dp"
+        app:chipIconSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_employee_surname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/chip_assigned_tasks"
+        app:layout_constraintTop_toBottomOf="@+id/chip_assigned_tasks" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

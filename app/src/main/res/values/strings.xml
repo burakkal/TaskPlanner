@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Task Planner</string>
+    <string name="employee">Employee</string>
+    <string name="control_panel">Control Panel</string>
+    <string name="task">Task</string>
+    <string name="no_employee_title">No employee!</string>
+    <string name="no_employee_detail">You don\'t add any employee yet. Tap the \'+\' button to add one.</string>
+    <string name="no_task_title">No task!</string>
+    <string name="no_task_detail">You don\'t add any task yet. Tap the \'+\' button to add one.</string>
+    <string name="label_difficulty">Difficulty: </string>
+</resources>

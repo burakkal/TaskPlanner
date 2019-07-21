@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_employee"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/employee" />
+
+    <item
+        android:id="@+id/navigation_control_panel"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/control_panel" />
+
+    <item
+        android:id="@+id/navigation_task"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="@string/task" />
+
+</menu>
